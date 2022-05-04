@@ -1,0 +1,13 @@
+name: Test
+on: [push]
+jobs:
+  Test-Playbook:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set Vault Password.
+      - name: Run tests.
+        run: ./.test/test-run.sh
+        env:
+          PY_COLORS: '1'
+          ANSIBLE_FORCE_COLOR: '1'

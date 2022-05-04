@@ -1,0 +1,5 @@
+FROM jrei/systemd-ubuntu:latest
+RUN echo 'root:Docker!' | chpasswd
+RUN mkdir -p /etc/docker/ && \
+    echo '{ "storage-driver": "vfs" }' > /etc/docker/daemon.json
+RUN apt-get update && apt-get upgrade --yes && apt-get install --yes sudo && apt-get autoremove

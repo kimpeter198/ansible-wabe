@@ -1,0 +1,11 @@
+---
+- name: Setup Docker-Server
+  hosts: localhost
+  remote_user: root
+
+  tasks:
+
+  - name: Hello Server
+    debug:
+      msg: "Hello Ansible!" 
+      
