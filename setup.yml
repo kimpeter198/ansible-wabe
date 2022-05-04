@@ -7,5 +7,5 @@
 
   - name: Hello Server
     debug:
-      msg: "Hello mein guter!" 
+      msg: "Hello mein guter Mensch!" 
       
