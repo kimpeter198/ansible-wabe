@@ -21,7 +21,7 @@
       
   - name: Ausgabe mit Loop
     debug:
-      msg: "Hallo: " + {{item}}
+      msg: "Hallo: {{item}}"
       loop:
         - anna
         - paul
