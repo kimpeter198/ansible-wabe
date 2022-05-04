@@ -7,5 +7,5 @@
 
   - name: Hello Server
     debug:
-      msg: "Hello Ansible!" 
+      msg: "Hello mein guter!" 
       
