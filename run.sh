@@ -48,7 +48,7 @@ ansible --version
 set -x
 
 # Run playbooks
-ansible-playbook -l localhost "$FOLDER/setup.yml" -e "ansible_sudo_pass=$BECOME_PASS" --vault-password-file "$FOLDER/.vault_pass" ${@:2}
+ansible-playbook -l localhost "$FOLDER/setup.yml" -e "ansible_sudo_pass=$BECOME_PASS" ${@:2}
 
 # Stop log ansible commands
 set +x
