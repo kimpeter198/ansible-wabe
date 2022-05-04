@@ -15,3 +15,6 @@
       state: touch
       mode: u=rw,g=r,o=r
       
+  - name: Ausgabe mit Variablen
+    debug:
+      msg: "{{ mein_cooler_text }}" 
