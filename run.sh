@@ -31,12 +31,6 @@ set -euo pipefail
 # Sync Clocks (Timezone Workaround https://askubuntu.com/questions/1096930/sudo-apt-update-error-release-file-is-not-yet-valid)
 sudo hwclock --hctosys
 
-# Update system and install Ansible
-sudo apt-get update
-sudo apt-get install --yes software-properties-common
-sudo add-apt-repository --yes --update ppa:ansible/ansible
-sudo apt-get install --yes ansible htop nano python3 tree
-
 # Ansible Color Fix
 PY_COLORS='1'
 ANSIBLE_FORCE_COLOR='1'
