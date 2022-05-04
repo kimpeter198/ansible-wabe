@@ -17,4 +17,12 @@
       
   - name: Ausgabe mit Variablen
     debug:
-      msg: "{{ mein_uncooler_text }}" 
+      msg: "{{ mein_cooler_text }}"
+      
+  - name: Ausgabe mit Loop
+    debug:
+      msg: "Hallo: " + {{item}}
+      loop:
+        - anna
+        - paul
+      
